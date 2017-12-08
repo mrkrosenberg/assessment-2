@@ -3,19 +3,25 @@ $(document).ready( function() {
 
 	var racer1 = $('#racer1').position();
 	var racer2 = $('#racer2').position();
-
-	console.log(racer1.left);
-	console.log(racer2.left);
+	var margin1 = $('#racer1').css('margin-left');
+	console.log(margin1);
+	var margin2 = $('#racer2').css('margin-left');
+	console.log(margin2);
+	
 
 	$(document).keydown( function(race) {
 		if (race.keyCode == 39) {
 			$('#racer1').animate( {
 				marginLeft: '+=10vw'
-			});
+			}, -200);
+			margin1 = $('#racer1').css('margin-left');
+			console.log(margin1);
 		} else if (race.keyCode == 190) {
 			$('#racer2').animate( {
 				marginLeft: '+=10vw'
-			});
+			}, -200);
+			margin2 = $('#racer2').css('margin-left');
+			console.log(margin2);
 		}
 	});
 	
