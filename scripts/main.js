@@ -12,7 +12,7 @@ $(document).ready( function() {
 	$(document).keydown( function(race) {
 		if (race.keyCode == 39) {
 			$('#racer1').animate( {
-				marginLeft: '+=10vw'
+				marginRight: '-=10vw'
 			}, -200);
 			margin1 = $('#racer1').css('margin-right');
 			console.log(margin1);
@@ -23,15 +23,18 @@ $(document).ready( function() {
 			}, -200);
 			margin2 = $('#racer2').css('margin-right');
 			console.log(margin2);
-			winner();
+			// winner();
 		}
+		
 	});
 	
 	var winner = function () {
-		if (margin1 < '1px') {
+		if (margin1 < '10vw') {
 			alert('Player 1 Wins!');
-		} else if (margin2 < '1px') {
+		} else if (margin2 < '10vw') {
 			alert('Player 2 Wins!');
+	} else {
+
 	}
 };
 
