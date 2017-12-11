@@ -1,7 +1,26 @@
-body {
+.container {
+	display: flex;
 	background-color: black;
+	height: 105vh;
+	width: 100%;
+}
+
+.logo {
+	height: 8vh;
+	width: 8vw;
+	color: white;
+	
 }
 
 .logIn {
-	border: 5px solid black;
+	height: 473px;
+	width: 380px;
+	margin: 100px auto 20px auto;
+	background-color: white;
+	display: block;
+}
+
+.footer {
+	height: 225px;
+	width: 100%;
 }
