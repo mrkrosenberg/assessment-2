@@ -1,6 +1,6 @@
 $(document).ready( function() {
 	console.log("shit works!");
-
+// creates variables for length of track and relative position of finish line
 	var trackLength = $('.raceTrack').width();
 		console.log(trackLength);
 		var finish1 = $('.finishLine1').width();
@@ -8,7 +8,7 @@ $(document).ready( function() {
 		var finish2 = $('.finishLine2').width();
 		console.log(finish2);
 	
-
+// creates function for racer movement
 
 	$(document).keydown( function(race) {
 		if (race.keyCode == 39) {
@@ -22,6 +22,10 @@ $(document).ready( function() {
 		}
 		
 	});
+
+// creates function for finish line
+// keydown adds incrementally to finishlines as racer moves across screen
+// player wins when finishline element is the length of the race track
 
 	$(document).keydown( function(race) {
 		
@@ -45,6 +49,9 @@ $(document).ready( function() {
 		console.log(trackLength);
 	});
 
+//checks with each keydown if the finish line element is the greater or equal 
+// determines winner 
+
 function checkForWinner (finish, raceTrack) {
 	if (finish1 > trackLength) {
 		alert('Player 1 Wins!');
@@ -53,9 +60,13 @@ function checkForWinner (finish, raceTrack) {
 	}
 }
 
+// resets the form from the server
+
 $('.reset').click( function() {
 	location.reload();
 });
+
+// pops up alert with instructions
 
 $('#instructions').click( function () {
 	alert("Instructions:");
