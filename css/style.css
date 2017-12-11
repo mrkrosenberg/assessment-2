@@ -7,14 +7,23 @@
 
 }
 
-
 .raceTrack {
 	height: 5vh;
-	width: 100%;
+	width: 90vw;
 	background-color: black;
 	margin-top: 50px;
 	display: flex;
 	justify-content: center;
+}
+
+.finishLine1 {
+	width: 6vw;
+	height: 100%;
+}
+
+.finishLine2 {
+	width: 6vw;
+	height: 100%;
 }
 
 #track1 {
@@ -34,4 +43,6 @@
 	background-color: blue;
 	margin: -3px auto auto 0;
 }
+
+
 
