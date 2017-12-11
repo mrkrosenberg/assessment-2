@@ -1,7 +1,10 @@
+body {
+	margin: 0;
+}
+
 .container {
 	display: flex;
 	background-color: black;
-	height: 105vh;
 	width: 100%;
 }
 
@@ -13,14 +16,74 @@
 }
 
 .logIn {
-	height: 473px;
-	width: 380px;
+	height: 500px;
+	width: 450px;
 	margin: 100px auto 20px auto;
 	background-color: white;
 	display: block;
+	padding: 30px;
+}
+
+.signIn {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.form {
+	margin: auto 50px auto 20px;
+}
+
+input {
+	height: 30px;
+	width: 380px;
+}
+
+.accountInfo {
+	margin: 20px auto;
+}
+
+.checkBox {
+	margin: 20px auto;
+	text-indent: -5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid grey;
+}
+
+.check {
+	height: 20px;
+	width: 20px;
+}
+
+.memberMe {
+	display: inline;
+}
+
+.fb {
+	height: 32px;
+	width: 32px;
+	padding: 5px;
+}
+
+.login {
+	display: inline;
+}
+
+.facebookLogin {
+	margin: 20px auto;
+}
+
+.signUp {
+	margin: 20px auto 40px auto;
+}
+
+.raceStart {
+	height: 40px;
+	width: 390px;
+	margin-top: 80px;
 }
 
 .footer {
 	height: 225px;
 	width: 100%;
+	position: relative;
 }
