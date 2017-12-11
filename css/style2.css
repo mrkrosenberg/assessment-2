@@ -3,38 +3,52 @@ body {
 }
 
 .container {
+	background-image: url('../images/background.jpg');
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: 120vh;
 	display: flex;
 	background-color: black;
 	width: 100%;
 }
 
+img {
+	margin-right: 0;
+}
+
 .logo {
 	height: 8vh;
 	width: 8vw;
-	color: white;
+	color: #e60915;
 	
 }
 
 .logIn {
-	height: 500px;
-	width: 450px;
+	background-color: #f3f3f3;
+	height: 550px;
+	width: 400px;
 	margin: 100px auto 20px auto;
-	background-color: white;
 	display: block;
-	padding: 30px;
+	padding: 30px 40px 30px 10px;
 }
 
 .signIn {
 	font-size: 24px;
 	font-weight: bold;
+	margin-left: 20px;
+}
+
+h2 {
+	margin-top: 0;
 }
 
 .form {
-	margin: auto 50px auto 20px;
+	margin: auto 60px auto 20px;
 }
 
 input {
-	height: 30px;
+	background-color: #faffbd;
+	height: 40px;
 	width: 380px;
 }
 
@@ -77,13 +91,56 @@ input {
 }
 
 .raceStart {
-	height: 40px;
+	font-size: 20px;
+	color: white;
+	background-color: #e60915;
+	height: 50px;
 	width: 390px;
-	margin-top: 80px;
+	margin-top: 90px;
+}
+
+a {
+	text-decoration: none;
 }
 
 .footer {
+	background-color: #f3f3f3;
 	height: 225px;
 	width: 100%;
-	position: relative;
+	margin-top: 0;
 }
+
+.contact-info {
+	color: #777777;
+	margin-top: 0;
+	margin-left: 65px;
+	padding-top: 30px;
+}
+
+ul {
+	list-style: none;
+	margin-top: 40px;
+}
+
+.list {
+	padding: 30px;
+	display: inline;
+}
+
+.link {
+	color: #777777;
+	display: inline;
+}
+
+.dropDown {
+	margin-left: 65px;
+}
+
+@media (max-width: 600px) {
+	.container {
+		background-image: none;
+		background-color: #f3f3f3;
+	}
+
+}
+

@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+
 	<link rel="stylesheet" href="css/style2.css">
 
 	<title>Racer Game!</title>
@@ -60,10 +63,30 @@
 			</div>
 			<div class="navigation">
 				<nav class="gameInfo">
-					<li class="instructions"><a href="#">Instructions</a></li>
-					<li class="comments"><a href="#">Comments/Feedback</a></li>
-					<li class="leaderBoard"><a href="#">Leader Board</a></li>
+					<ul>
+						<li class="list" id="instructions">
+							<a href="#">
+								<p class="link">Instructions</p>
+							</a>
+						</li>
+						<li class="list" id="comments">
+							<a href="#">
+								<p class="link">Comments</p>
+							</a>
+						</li>
+						<li class="list" id="leaderBoard" >
+							<a href="#">
+								<p class="link">Leader Board</p>
+							</a>
+						</li>
+					</ul>
 				</nav>
+			</div>
+			<div class="dropDown">
+				<select name="languageSelect" id="language">
+					<option value="English">English</option>
+					<option value="Espanol">Espanol</option>
+				</select>
 			</div>
 
 		</footer>

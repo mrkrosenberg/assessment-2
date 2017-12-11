@@ -57,5 +57,9 @@ $('.reset').click( function() {
 	location.reload();
 });
 
+$('#instructions').click( function () {
+	alert("Instructions:");
+});
+
 });
 
